@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset+"UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="=X-UA-Compatible" content="IE=edge">
+        <title>Stephie Kamajuwita March</title>
+        <link rel="stylesheet" type:"text/css" href="Style Biodata.css">
+        <link rel="stylesheet" type:"text/css" href="Style Hobbies.css">
+        <link rel="stylesheet" type:"text/css" href="Style Musics.css">
+        <link rel="stylesheet" type:"text/css" href="Style Movies.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <nav style="position: fixed; z-index: 9999; width: 100%; top: 0;">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="MSA Entertainment.html">MSA Entertainment</a>
+                </div>
+                <ul class="menu">
+                    <li><a href="#PROFILE">Profile</a></li>
+                    <li><a href="#HOBBIES">Hobbies</a></li>
+                    <li><a href="#MUSICS">Musics</a></li>
+                    <li><a href="#MOVIES">Movies</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <a name="PROFILE"></a>
+        <section id="profile">
+            <div class="profile">
+                <h1>PROFILE</h1>
+                <img src="stephie2.jpeg" style=float:left;>
+                <div style="margin-left: auto;">
+                    <h2 style= color:#c86b8e;><p>Hi There!</p></h2>
+                    <br>
+                    <p>I'm Stephie and I'll tell you how to pronounce my name. It's Stefi NOT Stepi -_- Imma self-proclaimed professional chicken taster, cat whisperer, and part time superhero (cape not included).</p>
+                    <br>
+                    <p>Every morning, I start my day with arguing with my mom about which shoes that I want to wear. As a teenager, I wanted to be a dinosour when i grew up. I still think it was a solid career choice. My life motto? Always give 100% - unless you're donating blood.</p>
+                    <br>
+                    <p>I have a talent for turning simple social interactions into funny encounters. It's a gift, really. My cooking style can be best described as 'Don't try this at home'.</p>
+                    <br>
+                    <h4 style= color:#c86b8e;><p>Here's my social media</p></h4>
+                    <ul class="icon-profile">
+                        <li><a href="https://www.instagram.com/stephie.march?igsh=MWx6OW10cmJzbXV3MQ=="><img src="instagram profile.png" alt="Instagram Stephie"></a></li>
+                        <li><a href="https://open.spotify.com/user/31d32pxllmlnpurtxhuju3ywd7uu?si=c5d40b7151754d4c"><img src="spotify profile.png" alt="Spotify Stephie"></a></li>
+                    </ul>
+                </div>
+             </div>
+        </section>
+
+        <a name="HOBBIES"></a>
+        <section id="hobbies">
+            <hr width="auto">
+            <div class="hobbies">
+                <h1>HOBBIES</h1>
+                <div class="wrapper">
+                    <div class="content-box">
+                        <div class="card">
+                            <h2>Alpaca Walking</h2>
+                            <P>Taking alpacas for strolls around Jagakarsa</P>
+                        </div>
+        
+                        <div class="card">
+                            <h2>Extreme Pillow Fighting</h2>
+                            <P>Hosting epic pillow fighting tournaments with my lil bro</P>
+                        </div>
+        
+                        <div class="card">
+                            <h2>Fake Product Inventions</h2>
+                            <P>Brainstorm and design that solve absurd problems, like toaster that also functions as a DJ mixer</P>
+                        </div>
+        
+                        <div class="card">
+                            <h2>Hotwheels Photography</h2>
+                            <P>Take creative and amusing photos of Hotwheels in different setting</P>
+                        </div>
+        
+                        <div class="card">
+                            <h2>Science Experiments</h2>
+                            <P>Conduct amusing science experiments that have funny or unexpected results</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a name="MUSICS"></a>
+        <section id="musics">
+            <hr width="auto">
+            <h1>FAVORITE MUSICS</h1>
+            <div class="musics">
+                <div class="container-musics">
+                    <div class="slide" style="background-image: url('Musics/lagu\ stepi\ 1.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ stepi\ 2.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ stepi\ 3.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ stepi\ 4.jpeg');"></div>   
+                    <div class="slide" style="background-image: url('Musics/lagu\ stepi\ 5.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ stepi\ 6.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ stepi\ 7.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ stepi\ 8.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ stepi\ 9.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ stepi\ 10.jpeg');"></div>
+                </div>
+            </div>
+
+            <script>
+                activeslideimg();
+        
+                function activeslideimg(activeSlide =0) {
+                    const slides = document.querySelectorAll(".slide")
+        
+                    slides[activeSlide].classList.add("active");
+        
+                    for (const slide of slides) {
+                        slide.addEventListener("click", () => {
+                            clearActiveClasses();
+        
+                            slide. classList.add("active");
+                        });
+                    }
+        
+        
+                    function clearActiveClasses() {
+                        slides.forEach((slide) => {
+                            slide.classList.remove("active");
+                        })
+                    }    
+                    
+                    
+                }
+            </script>
+        </section>
+
+        <section id="movies">
+            <div class="movies">
+                <main>
+                    <a name="MOVIES"></a>
+                    <section id="tranding">
+                     <div class="container"><h1>FAVORITE MOVIES</h1>
+                        <div class="swiper tranding-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide tranding-slide">
+                                    <div class="tranding-slide-img">
+                                        <img src="b. sherlock.jpeg" alt="tranding">
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide tranding-slide">
+                                    <div class="tranding-slide-img">
+                                        <img src="b. peaky blinders.jpeg" alt="tranding">
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide tranding-slide">
+                                    <div class="tranding-slide-img">
+                                        <img src="b. wild child.jpeg" alt="tranding">
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide tranding-slide">
+                                    <div class="tranding-slide-img">
+                                        <img src="b. tenggelamnya kapal.jpeg" alt="tranding">
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide tranding-slide">
+                                    <div class="tranding-slide-img">
+                                        <img src="b. 5 cm.jpeg" alt="tranding">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </section>
+
+        <!-- javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+
+            <footer>
+                <div class="logo">
+                    <h2>MSA Entertainment</h2>
+                    <br>
+                    <P>All contents of MSA Entertainment are protected by copyright
+                        <br>&#169; MSA Entertainment ALL RIGHTS RESERVED
+                    </P>
+                </div>
+                <div class="col">
+                    <p>Jl. Margonda Raya, Pondok Cina, Depok, Jawa Barat, Indonesia</p>
+                    <ul class="icon">
+                        <li><a href=""><img src="youtube.png" alt="Youtube"></a></li>
+                        <li><a href="https://www.instagram.com/msaent.official?igsh=cWM2YTJweXJ6bTBm"><img src="instagram.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+            </footer>
+    </body>
+
+</html>

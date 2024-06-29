@@ -1,0 +1,200 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background: linear-gradient(
+        to right,
+        rgba(200, 107, 142, 1),
+        rgba(218, 105, 250, 1),
+        rgba(110, 125, 253, 1)
+    );
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li a {
+    margin: 0 1rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: rgb(216, 214, 216);
+}
+
+body section {
+    padding-top: 1rem;
+}
+
+.profile {
+    max-width: 90 px;
+    margin: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 12rem;
+    text-align: justify;
+}
+
+h1 {
+    margin: 3rem;
+    margin-top: 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: #373046;
+}
+
+.profile p {
+    margin-right: 3rem;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.profile img {
+    float: left;
+    position: left;
+    image-resolution: 500dpi;
+    max-width: 100%;
+    border-radius: 5px;
+    height: 450px;
+    /* margin-top: -100px */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.icon-profile {
+    list-style-type: none;
+    display: flex;
+    float: left;
+}
+
+.icon-profile img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    color: #373046; 
+    background-color: #373046;
+    margin: 3rem;
+    margin-top: 5rem;
+    margin-bottom: auto;
+}
+
+#musics hr {
+    border: none;
+    height: 2px;
+    color: #373046; 
+    background-color: #373046;
+    margin: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.hobbies {
+    max-width: 90 px;
+    margin: 3rem;
+    text-align: justify;
+}
+
+.hobbies p {
+    margin: 3rem;
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+.musics {
+    max-width: 90 px;
+    margin: 3rem;
+    text-align: justify;
+}
+
+.musics p {
+    margin: 3rem;
+    line-height: 1.3em;
+    text-align: justify;
+}
+.movies {
+    max-width: 90 px;
+    text-align: justify;
+    background: url(blurry.jpeg)
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(
+        to right,
+        rgba(200, 107, 142, 1),
+        rgba(218, 105, 250, 1),
+        rgba(110, 125, 253, 1)
+    );
+    color: #f4f4f4;
+    padding: 3rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.col {
+    text-align: right;
+}
+
+.icon {
+    list-style-type: none;
+    display: flex;
+    float: right;
+}
+
+.icon li a {
+    margin: 0 0.5rem;
+}
+
+.col img {
+    width: 25px;
+    height: 25px;
+    margin-top: 0.5rem;
+}

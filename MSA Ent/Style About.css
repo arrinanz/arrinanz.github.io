@@ -1,0 +1,159 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background: linear-gradient(
+        to right,
+        rgba(200, 107, 142, 1),
+        rgba(218, 105, 250, 1),
+        rgba(110, 125, 253, 1)
+    );
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li a {
+    margin: 0 1rem;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: rgb(216, 214, 216);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    padding-top: 25px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    background: rgb(164, 134, 194);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+h1 {
+    margin: 3rem;
+    margin-top: 7rem;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #373046;
+    text-align: center;
+}
+
+img {
+    float: center;
+    position: relative;
+    image-resolution: 200dpi;
+    width: 25%;
+    height: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    max-width: 90 px;
+    margin: 3rem;
+    margin-top: 5rem;
+    text-align: left;
+}
+
+.hero h3 {
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #373046;
+    text-align: left;
+}
+
+.hero p {
+    line-height: 1.3em;
+    text-align: justify;
+}
+
+hr {
+    border: none;
+    height: 1.5px;
+    color: #373046; 
+    background-color: #373046;
+}
+
+footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background: linear-gradient(
+        to right,
+        rgba(200, 107, 142, 1),
+        rgba(218, 105, 250, 1),
+        rgba(110, 125, 253, 1)
+    );
+    color: #f4f4f4;
+    padding: 3rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.col {
+    text-align: right;
+}
+
+.icon {
+    list-style-type: none;
+    display: flex;
+    float: right;
+}
+
+.icon li a {
+   margin: 0 2.5rem;
+}
+
+.col img {
+    width: 25px;
+    height: 25px;
+}

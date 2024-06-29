@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset+"UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="=X-UA-Compatible" content="IE=edge">
+        <title>Mutiara Syahira</title>
+        <link rel="stylesheet" type:"text/css" href="Style Biodata.css">
+        <link rel="stylesheet" type:"text/css" href="Style Hobbies.css">
+        <link rel="stylesheet" type:"text/css" href="Style Musics.css">
+        <link rel="stylesheet" type:"text/css" href="Style Movies.css">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <nav style="position: fixed; z-index: 9999; width: 100%; top: 0;">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="MSA Entertainment.html">MSA Entertainment</a>
+                </div>
+                <ul class="menu">
+                    <li><a href="#PROFILE">Profile</a></li>
+                    <li><a href="#HOBBIES">Hobbies</a></li>
+                    <li><a href="#MUSICS">Musics</a></li>
+                    <li><a href="#MOVIES">Movies</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <a name="PROFILE"></a>
+        <section id="profile">
+            <div class="profile">
+                <h1>PROFILE</h1>
+                <img src="muti.jpeg" style=float:left;>
+                <div style="margin-left: auto;">
+                    <h2 style= color:#c86b8e;><p>Hi, everyone!</p></h2>
+                    <br>
+                    <p>I'm Muti and my full name is Mutiara Syahira. I'm the oldest of three children and was born on January, 23rd 2005. I'm a cat lover. I really like listening to musics and watching films.</p>
+                    <br>
+                    <p>I love to eat chicken, but I'm afraid of it (shake my head). Besides that, I'm a sweet tooth. Ice cream, chocolate, and YOU could be my fav everrr. Cihuyy adakadabrak</p>
+                    <br>
+                    <p>I'm an introvert around people who are not close to me, but if they are close, sometimes I become an extrovert.</p>
+                    <br>
+                    <h4 style= color:#c86b8e;><p>Here's my social media</p></h4>
+                    <ul class="icon-profile">
+                        <li><a href="https://www.instagram.com/mtrasyhrr_?igsh=MWtlYzRtYmNuOHM2bg=="><img src="instagram profile.png" alt="Instagram Muti"></a></li>
+                        <li><a href="https://open.spotify.com/user/31gy7yrl52gxe4fat4opcnp2mpde?si=MWxg_svsTRGhY9gNm-ZBew"><img src="spotify profile.png" alt="Spotify Muti"></a></li>
+                    </ul>
+                </div>
+             </div>
+        </section>
+
+        <a name="HOBBIES"></a>
+        <section id="hobbies">
+            <hr width="auto">
+            <div class="hobbies">
+                <h1>HOBBIES</h1>
+                <div class="wrapper">
+                    <div class="content-box">
+                        <div class="card">
+                            <h2>Watching Movie</h2>
+                            <P>Watching movies is also among my favorite hobbies, I like all genres of movie</P>
+                        </div>
+        
+                        <div class="card">
+                            <h2>Listening to Music</h2>
+                            <P>A hobby that I often do is listening to music, the music I like is jazz and pop only</P>
+                        </div>
+        
+                        <div class="card">
+                            <h2>Singing</h2>
+                            <P>When I have free time sometimes I like to sing, because singing make me happy</P>
+                        </div>
+        
+                        <div class="card">
+                            <h2>Playing Puzzles and Lego</h2>
+                            <P>I like to piece together Lego and puzzles for my collection</P>
+                        </div>
+        
+                        <div class="card">
+                            <h2>Cycling</h2>
+                            <P>On Saturdays and Sundays I usually cycle with my family</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a name="MUSICS"></a>
+        <section id="musics">
+            <hr width="auto">
+            <h1>FAVORITE MUSICS</h1>
+            <div class="musics">
+                <div class="container-musics">
+                    <div class="slide" style="background-image: url('Musics/lagu\ muti\ 1.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ muti\ 2.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ muti\ 3.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ muti\ 4.jpeg');"></div>   
+                    <div class="slide" style="background-image: url('Musics/lagu\ muti\ 5.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ muti\ 6.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ muti\ 7.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ muti\ 8.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ muti\ 9.jpeg');"></div>
+                    <div class="slide" style="background-image: url('Musics/lagu\ muti\ 10.jpeg');"></div>
+                </div>
+            </div>
+
+            <script>
+                activeslideimg();
+        
+                function activeslideimg(activeSlide =0) {
+                    const slides = document.querySelectorAll(".slide")
+        
+                    slides[activeSlide].classList.add("active");
+        
+                    for (const slide of slides) {
+                        slide.addEventListener("click", () => {
+                            clearActiveClasses();
+        
+                            slide. classList.add("active");
+                        });
+                    }
+        
+        
+                    function clearActiveClasses() {
+                        slides.forEach((slide) => {
+                            slide.classList.remove("active");
+                        })
+                    }    
+                    
+                    
+                }
+            </script>
+        </section>
+
+        <section id="movies">
+            <div class="movies">
+                <main>
+                    <a name="MOVIES"></a>
+                    <section id="tranding">
+                     <div class="container"><h1>FAVORITE MOVIES</h1>
+                        <div class="swiper tranding-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide tranding-slide">
+                                    <div class="tranding-slide-img">
+                                        <img src="a. up.jpeg" alt="tranding">
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide tranding-slide">
+                                    <div class="tranding-slide-img">
+                                        <img src="a. coco.jpeg" alt="tranding">
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide tranding-slide">
+                                    <div class="tranding-slide-img">
+                                        <img src="a. eyang ti.jpeg" alt="tranding">
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide tranding-slide">
+                                    <div class="tranding-slide-img">
+                                        <img src="a. sabtu bersama bapak.jpeg" alt="tranding">
+                                    </div>
+                                </div>
+    
+                                <div class="swiper-slide tranding-slide">
+                                    <div class="tranding-slide-img">
+                                        <img src="a. jalan yang jauh.jpeg" alt="tranding">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </section>
+
+        <!-- javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+
+            <footer>
+                <div class="logo">
+                    <h2>MSA Entertainment</h2>
+                    <br>
+                    <P>All contents of MSA Entertainment are protected by copyright
+                        <br>&#169; MSA Entertainment ALL RIGHTS RESERVED
+                    </P>
+                </div>
+                <div class="col">
+                    <p>Jl. Margonda Raya, Pondok Cina, Depok, Jawa Barat, Indonesia</p>
+                    <ul class="icon">
+                        <li><a href=""><img src="youtube.png" alt="Youtube"></a></li>
+                        <li><a href="https://www.instagram.com/msaent.official?igsh=cWM2YTJweXJ6bTBm"><img src="instagram.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+            </footer>
+    </body>
+
+</html>

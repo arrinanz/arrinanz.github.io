@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body .musics {
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: -5rem;
+    margin-bottom: 3rem;
+}
+
+.container-musics {
+    width: 100%;
+    display: flex;
+}
+
+.slide{
+    height: 55vh;
+    border-radius: 15px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex: 3;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 0.7s ease-in-out;
+    filter: blur(4px); 
+}
+
+.slide.active {
+    flex: 10;
+    filter: blur(0px);
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 50rem) {
+
+    .container {
+        display: flex;
+        height: 90vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .slide {
+        width: 90vw;
+        border-radius: 20px;
+        margin: 10px;
+    }
+    
+}
+    
